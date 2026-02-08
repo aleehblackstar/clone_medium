@@ -75,6 +75,32 @@ class MediumHomePage extends StatelessWidget {
                   },
                 ),
               ),
+
+              SizedBox(
+                height: 18,
+              ),
+
+              Center(
+                child: RichText(
+                  text: TextSpan(
+                    style: const TextStyle(
+                      fontSize: 16,
+                      color: Colors.black
+                    ),
+                    children: [
+                      TextSpan(
+                        text: "Already have an account? "
+                      ),
+                      TextSpan(
+                        text: "Sign in",
+                        style: TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold
+                        )
+                      )
+                    ]
+                  ),),
+              )
             ],
           ),
         ),
