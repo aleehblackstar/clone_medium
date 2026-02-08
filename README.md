@@ -1,16 +1,71 @@
-# medium_clone
+# 📱 Medium Clone – Flutter
 
-A new Flutter project.
+Clone da tela inicial do **Medium** desenvolvido em Flutter como prática de UI, componentização e boas práticas de layout.
 
-## Getting Started
+Projeto focado em:
+- reutilização de widgets
+- organização de layout com Column/Row
+- uso de Keys para testes
+- responsividade
+- componentes customizados
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Screenshot
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot da aplicação](assets/screenshotTela.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🚀 Funcionalidades
+
+✅ Logo do Medium  
+✅ Botões sociais (Google / Email / Facebook)  
+✅ Divisor com texto central  
+✅ Texto clicável (Sign in)  
+✅ Termos e políticas clicáveis  
+✅ Layout responsivo  
+✅ Keys para testes automatizados  
+
+---
+
+## 🧩 Componentes criados
+
+### 🔹 SocialButton
+Botão reutilizável com:
+- ícone
+- texto
+- estilo customizável
+- suporte a Key
+
+### 🔹 CircleIconButton
+Botão circular para redes sociais
+
+### 🔹 CustomButton
+Preparado para futuras ações principais
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- Flutter
+- Dart
+- Material Design
+- Google Fonts
+
+---
+
+## ▶️ Como rodar o projeto
+
+```bash
+# clonar
+git clone https://github.com/aleehblackstar/clone_medium.git
+
+# entrar na pasta
+cd clone_medium
+
+# instalar dependências
+flutter pub get
+
+# executar
+flutter run
