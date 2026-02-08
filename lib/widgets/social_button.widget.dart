@@ -33,7 +33,8 @@ class SocialButton extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(width: 38),
+          const SizedBox(width: 38),
+
           ],
         ),
       ),

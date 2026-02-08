@@ -1,3 +1,4 @@
+import 'package:medium_clone/widgets/custom_button.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medium_clone/widgets/social_button.widget.dart';
@@ -31,19 +32,48 @@ class MediumHomePage extends StatelessWidget {
                 buttonKey: const Key("google_button"),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: Colors.black,
-                  side: const BorderSide(color: Colors.black)
+                  side: const BorderSide(color: Colors.black),
                 ),
               ),
 
               SizedBox(height: 18),
 
-              SocialButton(pathImage: "assets/images/email.png",
-              text: "Sign up with email",
-              buttonKey: const Key("signupEmail"),
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.black,
-                side: const BorderSide(color: Colors.black)
+              SocialButton(
+                pathImage: "assets/images/email.png",
+                text: "Sign up with email",
+                buttonKey: const Key("signupEmail"),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.black,
+                  side: const BorderSide(color: Colors.black),
+                ),
               ),
+
+              SizedBox(height: 30),
+
+              Row(
+                children: [
+                  Expanded(child: Divider(thickness: 2, color: Colors.grey)),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    child: Text(
+                      "Or, sign up with",
+                      style: TextStyle(color: Colors.black87),
+                    ),
+                  ),
+
+                  Expanded(child: Divider(thickness: 2, color: Colors.grey)),
+                ],
+              ),
+
+              SizedBox(height: 30),
+
+              Center(
+                child: CircleIconButton(
+                  imagePath: "assets/images/facebook.png",
+                  onTap: () {
+                    debugPrint("Facebook clicked");
+                  },
+                ),
               ),
             ],
           ),
